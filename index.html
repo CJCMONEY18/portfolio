@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cedric Cooper Portfolio</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&family=Roboto&display=swap" rel="stylesheet">
+    
+    <!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<!--Font library-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!--My CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!--jQuery, then JS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!--My JS-->
+	<script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><span class="circle">CJ</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <!--insert site into home href-->
+                <a class="nav-link active" aria-current="page" href="https://cjcmoney18.github.io/Cooper/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              CJ | @CJCMONEY18
+            </span>
+          </div>
+        </div>
+      </nav>
+
+    <!--intro heading-->
+   <header>
+    <div class="jumbotron mooning-bg">
+        <img src="img/JobPicc.jpg" alt="Cedric Cooper Profile Img" class="img-border">
+        <h1 class="display-4">Hi, my name is Cedric Cooper</h1>
+        <p class="lead">Junior Game Developer</p>
+        <span class="inline-btn">
+            <a class="btn btn-primary btn-md" href="Cedric_Cooper_Infographic_Resume.pdf" role="button">Resume</a>
+            <a class="btn btn-primary btn-md" href="#contact" role="button">Contact</a>
+        </span>
+    </div>
+   </header>
+<!--About Me: Content section 1-->
+<section id="about">
+    <article>
+        <div class="text-center">
+            <h1 class="main-heading">About</h1>
+            <p class="p-about container">
+              I&#39;m a young Game Designer who was born in Chicago, raised in Las Vegas with 2+ years
+              experience with Unity and C#. With my Bachelor&#39;s degree in Game Design from Full Sail
+              Univ. my goal is to create amazing video games that are able to bring joy to many
+              people and smiles aroung the world. No matter the genre of the game, whether it&#39;s
+              action-adventure, fighters/sports, RTS, etc. as long as I can contribute to the project
+              it will make me happy and hopefully make others happy!
+            </p>
+
+        </div>
+    </article>
+</section>
+
+<!--Stackoverflow solution-->
+<section id="projects">
+  <article class="d-flex justify-content-center">
+        <div class="flip">
+          <div class="card bg-dark text-white text-center" style="width: 600px;"> 
+            <div class="face front">
+                <img src="img/portal.png" class="card-img">
+            </div> 
+            <div class="back card-img-overlay"> 
+              <div class="text-center"> 
+                  <h5 class="card-title">Gateway Solutions</h5>
+                  <p class="card-text">This project is a reproduction of <em>Portal</em>, a 1st person puzzle-platform video game.</p>
+                  <p class="card-text"><small class="text-muted">Coming soon</small></p>
+              </div>
+            </div>
+          </div>	 
+        </div>
+    </article>
+  </section>
+
+
+   <!--Projects: Content section 2
+   <section id="projects">
+       <article class="d-flex justify-content-center">
+        <div class="card bg-dark text-white text-center flip-card" style="width: 600px;">
+          <img src="img/portal.png" class="card-img" alt="Gateway Solutions" id="dark-blue-bg">
+          
+          <div class="card-img-overlay" id="card-back">
+            <h5 class="card-title">Gateway Solutions</h5>
+                  <p class="card-text">This project is a reproduction of <em>Portal</em>, a 1st person puzzle-platform video game.</p>
+                  <p class="card-text"><small class="text-muted">Coming soon</small></p>
+          </div>
+        </div>
+       </article>
+   </section>-->
+    <!--Original Card-->
+          <!--<div>
+            <h1 class="main-heading">Projects</h1>
+            <div class="card mb-3 container">
+                <img src="img/portal.png" class="card-img-top img-size" alt="Gateway Solutions Cover">
+                <div class="card-body">
+                  <h5 class="card-title">Gateway Solutions</h5>
+                  <p class="card-text">This project is a reproduction of <em>Portal</em>, a 1st person puzzle-platform video game.</p>
+                  <p class="card-text"><small class="text-muted">Coming soon</small></p>
+                </div>
+              </div>
+        </div>-->
+
+    <!--Contact: Content section 3-->
+   <section id="contact">
+       <article>
+        <div>
+            <h1 class="main-heading">Contact</h1>
+            <form action="" class="container">
+                <br>
+                <div class="form-group">
+                    <label for="firstname">First name:</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="lastname">Last name:</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="textarea">Write a message:</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary btn-md btn-spacing">Send</button>
+                <br>
+            </form>
+        </div>
+       </article>
+   </section>
+
+   <!--footer-->
+   <footer class="bg-dark box">
+            <h1 class="main-heading box-One"><span class="circle">CJ</span></h1>
+            <div class="box-Two text-center">
+                <p class="p-footer">Email: </p>
+                <p class="p-footer">cedriccooper667</p>
+                <p class="p-footer">@outlook.com</p>
+            </div>
+            <div class="box-Three text-center">
+                <p class="p-footer">Media:</p>
+                <!--Add the links-->
+                <a href="https://www.linkedin.com/in/cedric-gamedev/" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.github.com/CJCMONEY18/"><i class="fab fa-github-square"></i></a>
+            </div>
+            <div class="box-Four text-center">
+                <p class="p-footer">Cedric Cooper &copy; | 2021</p>
+            </div>
+   </footer>
+<!--Javascript BootStrap script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
