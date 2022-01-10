@@ -144,10 +144,11 @@ p {
   }
  
   .flip .card .back {
-    /*padding-top: 50%;*/
+    padding-top: 5%;
     -webkit-transform: rotatey(-180deg);
     transform: rotatey(-180deg);
   }
+
 
 /*Contact form*/
 label {
