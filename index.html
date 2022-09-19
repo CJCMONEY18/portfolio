@@ -7,12 +7,14 @@
     <title>Cedric Cooper Portfolio</title>
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <!-- <link rel="shortcut icon" href="img/favicon.ico"/> -->
+    <link rel="icon" type="image/png" href="img/cj-icon.png">
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
     
     <!--Bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -34,7 +36,9 @@
     <!--navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><span class="circle">CJ</span></a>
+          <a class="navbar-brand" href="#">
+            <img src="img/cj-icon.png" alt="CJ icon blue circle" width="60px" height="60px">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -44,9 +48,9 @@
                   <!--insert site into home href-->
                 <a class="nav-link active" aria-current="page" href="https://cjcmoney18.github.io/Cooper/">Home</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
@@ -65,30 +69,22 @@
    <header>
     <div class="jumbotron mooning-bg">
         <img src="img/JobPicc.jpg" alt="Cedric Cooper Profile Img" class="img-border">
-        <h1 class="display-4">Hi, my name is Cedric Cooper</h1>
+        <h1 class="display-4 pb-2">Hi, my name is Cedric Cooper</h1>
         <p class="lead">Junior Game Developer</p>
+        <p class="p-about container">I&#39;m a Game Designer born in Chicago, raised in Las Vegas with 3 years experience with coding in Unity and C#. 
+        <br>
+        With my Bachelor&#39;s degree in Game Design from Full Sail University, my dream is to one day create a game that is able to bring joy to many people.</p>
         <span class="inline-btn">
             <a class="btn btn-primary btn-md" href="Cedric_Cooper_Infographic_Resume.pdf" role="button">Resume</a>
             <a class="btn btn-primary btn-md" href="#contact" role="button">Contact</a>
         </span>
     </div>
    </header>
-<!--About Me: Content section 1-->
-<section id="about">
-    <article>
-        <div class="text-center">
-            <h1 class="main-heading">About</h1>
-            <p class="p-about container">
-              I&#39;m a Game Designer born in Chicago, raised in Las Vegas with 3 years
-              experience with coding in Unity and C#. With my Bachelor&#39;s degree in Game Design from Full Sail University, my dream is to one day create a game that is able to bring joy to many people.
-            </p>
 
-        </div>
-    </article>
-</section>
 <!--Project 1-->
 <!--Stackoverflow solution-->
 <section id="projects">
+  <h1 class="main-heading mb-5 mt-3">Projects</h1>
   <article class="d-flex justify-content-center">
         <div class="flip">
           <div class="card bg-dark text-white text-center" style="width: 600px;"> 
@@ -155,23 +151,23 @@
 <br>
     <!--Contact: Content section 3-->
    <section id="contact">
-       <article>
-        <div>
+       <article class="pb-5 pt-5">
+        <div class="form-text">
             <h1 class="main-heading">Contact</h1>
-            <form action="" class="container">
+            <!-- <form action="" class="container">
                 <br>
                 <div class="form-group">
-                    <label for="firstname">First name:</label>
+                    <label for="firstname">First Name:</label>
                     <input type="text" class="form-control" id="firstname" placeholder="First Name">
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="lastname">Last name:</label>
+                    <label for="lastname">Last Name:</label>
                     <input type="text" class="form-control" id="lastname" placeholder="Last Name">
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="email">Email address:</label>
+                    <label for="email">Email Address:</label>
                     <input type="email" class="form-control" id="email" placeholder="Email Address">
                 </div>
                 <br>
@@ -182,29 +178,77 @@
                 <br>
                 <button type="submit" class="btn btn-primary btn-md btn-spacing">Send</button>
                 <br>
+            </form> -->
+            <form class="container">
+              <!-- Name Field -->
+              <div class="pb-1">
+                <label for="name" class="col-form-label" style="font-weight: 500;">
+                  Name
+                  <span style="color: red;">&#42;</span>
+                </label>
+              </div>
+                <div class="row g-3 align-items-center pb-3">
+                  <div class="col-md-6">
+                    <input type="name" id="firstName" class="form-control" aria-describedby="firstName">
+                    <span id="firstNameHelp" class="form-text" style="color: white;">
+                      First
+                    </span>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="name" id="lastName" class="form-control" aria-describedby="lasstName">
+                    <span id="lastNameHelp" class="form-text" style="color: white;">
+                      Last
+                    </span>
+                  </div>
+                </div>
+      
+                <!-- Email Field -->
+                <div class="pb-3">
+                  <label for="name" class="form-label" style="font-weight: 500;">
+                    Email address
+                    <span style="color: red;">&#42;</span>
+                  </label>
+                  <input type="email" class="form-control" id="email" aria-describedby="email">
+                </div>
+                <!-- Additional Comments -->
+                <div class="pb-3">
+                  <label for="comments" class="form-label" style="font-weight: 500; min-width: 100%;">
+                    Write a message:
+                    <textarea class="form-control" id="textArea" rows="3"></textarea>
+                  </label>
+                </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
        </article>
    </section>
 
    <!--footer-->
-   <footer class="bg-dark box">
-            <h1 class="main-heading box-One"><span class="circle">CJ</span></h1>
-            <div class="box-Two text-center">
-                <p class="p-footer">Email: </p>
-                <p class="p-footer">cedriccooper667</p>
-                <p class="p-footer">@outlook.com</p>
-            </div>
-            <div class="box-Three text-center">
-                <p class="p-footer">Media:</p>
-                <!--Add the links-->
-                <a href="https://www.linkedin.com/in/cedric-gamedev/" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.github.com/CJCMONEY18/"><i class="fab fa-github-square"></i></a>
-            </div>
-            <div class="box-Four text-center">
-                <p class="p-footer">Cedric Cooper &copy; | 2021</p>
-            </div>
+   <footer class="bg-dark pb-3 pt-3">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col text-center">
+          <img src="img/cj-logo.png" alt="CJ icon blue circle" width="100px" height="100px">
+        </div>
+        <div class="col p-footer-links justify-content-center align-items-center text-center">
+          <a href="https://cjcmoney18.github.io/Cooper/">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="col align-items-end text-end">
+          <a href="https://www.linkedin.com/in/cedric-gamedev/" class="text-decoration-none">
+            <i class="fab fa-linkedin"></i>
+          </a>
+            <a href="https://www.github.com/CJCMONEY18/">
+              <i class="fab fa-github-square"></i>
+            </a>
+          <p class="p-footer">Cedric Cooper &copy; | 2022</p>
+        </div>
+      </div>
+    </div>
+ 
    </footer>
+
 <!--Javascript BootStrap script-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
