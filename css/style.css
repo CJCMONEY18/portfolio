@@ -18,13 +18,61 @@ p {
     font-family: 'Epilogue', sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+@media (min-width: 830px) and (max-width: 1000px) {
+    .font-scale {
+        font-size: 1.5vmin!important;
+    }
+
+    div.card.bg-dark.text-white.text-center {
+        width: 50vw!important;
+    }
+
+}
+
+
+/* min-width: no less than */
+@media (min-width: 601px) and (max-width: 829px) {
+    
+    .font-scale {
+        font-size: 1vmin!important;
+    }
+
+    div.card.bg-dark.text-white.text-center {
+        width: 40vw!important;
+    }
+
+}
+/* max-width = no greater than */
+@media (max-width: 600px) and (min-width: 388px) {
     .img-border {
         border: 1px solid navy;
         border-radius: 50%;
         height: 10vh!important;
         width: 14vw!important;
     }
+    .font-scale {
+        font-size: 1vmin!important;
+    }
+
+    div.card.bg-dark.text-white.text-center {
+        width: 40vw!important;
+    }
+
+}
+
+@media (max-width: 585px) {
+    .font-scale {
+        font-size: 2vmin!important;
+    }
+
+    .card-title {
+        font-size: 2vmin!important;
+    }
+
+    div.card.bg-dark.text-white.text-center {
+        width: 80vw!important;
+    }
+
 }
 
 h1.main-heading {
@@ -154,6 +202,8 @@ p {
     -webkit-transform: rotatey(-180deg);
     transform: rotatey(-180deg);
   }
+
+
 
 .form-text {
     font-family: 'Epilogue', sans-serif;
