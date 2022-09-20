@@ -154,32 +154,7 @@
        <article class="pb-5 pt-5">
         <div class="form-text">
             <h1 class="main-heading">Contact</h1>
-            <!-- <form action="" class="container">
-                <br>
-                <div class="form-group">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" class="form-control" id="firstname" placeholder="First Name">
-                </div>
-                <br>
-                <div class="form-group">
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" class="form-control" id="lastname" placeholder="Last Name">
-                </div>
-                <br>
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email Address">
-                </div>
-                <br>
-                <div class="form-group">
-                    <label for="textarea">Write a message:</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
-                </div>
-                <br>
-                <button type="submit" class="btn btn-primary btn-md btn-spacing">Send</button>
-                <br>
-            </form> -->
-            <form class="container">
+            <form class="container" action="https://formspree.io/f/xaykekqn" method="POST">
               <!-- Name Field -->
               <div class="pb-1">
                 <label for="name" class="col-form-label" style="font-weight: 500;">
@@ -189,32 +164,31 @@
               </div>
                 <div class="row g-3 align-items-center pb-3">
                   <div class="col-md-6">
-                    <input type="name" id="firstName" class="form-control" aria-describedby="firstName">
+                    <input type="name" id="firstName" class="form-control" aria-describedby="firstName" name="firstName">
                     <span id="firstNameHelp" class="form-text" style="color: white;">
                       First
                     </span>
                   </div>
                   <div class="col-md-6">
-                    <input type="name" id="lastName" class="form-control" aria-describedby="lasstName">
+                    <input type="name" id="lastName" class="form-control" aria-describedby="lasstName" name="lastName">
                     <span id="lastNameHelp" class="form-text" style="color: white;">
                       Last
                     </span>
                   </div>
                 </div>
-      
                 <!-- Email Field -->
                 <div class="pb-3">
                   <label for="name" class="form-label" style="font-weight: 500;">
                     Email address
                     <span style="color: red;">&#42;</span>
                   </label>
-                  <input type="email" class="form-control" id="email" aria-describedby="email">
+                  <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
                 </div>
                 <!-- Additional Comments -->
                 <div class="pb-3">
                   <label for="comments" class="form-label" style="font-weight: 500; min-width: 100%;">
                     Write a message:
-                    <textarea class="form-control" id="textArea" rows="3"></textarea>
+                    <textarea class="form-control" id="textArea" rows="3" name="textarea"></textarea>
                   </label>
                 </div>
               <button type="submit" class="btn btn-primary">Submit</button>
@@ -242,9 +216,10 @@
             <a href="https://www.github.com/CJCMONEY18/">
               <i class="fab fa-github-square"></i>
             </a>
-          <p class="p-footer">Cedric Cooper &copy; | 2022</p>
+          
         </div>
       </div>
+      <p class="p-footer text-end">Cedric Cooper &copy; | 2022</p>
     </div>
  
    </footer>
