@@ -119,6 +119,7 @@ a.btn {
 
 .project-title {
     font-size: 5rem;
+    color: #fff;
 }
 
 .project-title::before {    
@@ -132,7 +133,7 @@ a.btn {
     left: 45px;
 }
 
-#projects::after {
+/*#projects::after {
     content: "";
     display: block;
     width: 100%;
@@ -142,9 +143,14 @@ a.btn {
     margin-top: -50vh;
     z-index: -1;
 
+}*/
+
+#projects {
+  background: linear-gradient(0deg, #000C80 0%, #00021A 100%);
+  padding-bottom: 60px;
 }
 
-@media screen and (max-width: 992px) {
+/*@media screen and (max-width: 992px) {
     #projects::after {
         content: "";
         display: block;
@@ -160,7 +166,7 @@ a.btn {
         position: relative;
         margin-top: 35vh!important;
     }
-}
+}*/
 
 .card {
     border-radius: 15px;
