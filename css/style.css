@@ -11,14 +11,26 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: #F5F5F5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Big Shoulders Stencil Display', sans-serif;
 }
 
 p {
     font-family: 'Epilogue', sans-serif;
 }
 
-@media (min-width: 830px) and (max-width: 1000px) {
+.navbar {
+    background: linear-gradient(0deg, #000C80 0%, #00021A 100%);
+}
+
+/* a.nav-link {
+    text-transform: uppercase;
+} */
+
+/* @media (min-width: 830px) and (max-width: 1000px) {
     .font-scale {
         font-size: 1.5vmin!important;
     }
@@ -30,7 +42,6 @@ p {
 }
 
 
-/* min-width: no less than */
 @media (min-width: 601px) and (max-width: 829px) {
     
     .font-scale {
@@ -42,7 +53,7 @@ p {
     }
 
 }
-/* max-width = no greater than */
+
 @media (max-width: 600px) and (min-width: 388px) {
     .img-border {
         border: 1px solid navy;
@@ -89,7 +100,6 @@ h1.main-heading {
     color: gold!important;
 }
 
-/*navbar shapes bg*/
 .circle {
     height: 100px;
     width: 100px;
@@ -98,14 +108,13 @@ h1.main-heading {
     border-radius: 50%;
 }
 
-/*header/jumbotron styling*/
+
 .jumbotron {
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
     color: gold;
-    /*background-color: rgba(0, 0, 128, 1);
-    background: url("../img/mooning.png");*/
+
 
 }
 
@@ -157,7 +166,7 @@ p {
     height: 75%;
 }
 
-/*About Me styling*/
+
  .p-about {
      color: black;
      text-align: center;
@@ -166,7 +175,7 @@ p {
      font-family: 'Epilogue', sans-serif;
  }
 
-/*Projects styling*/
+
 
  .flip {
     -webkit-perspective: 800;   
@@ -209,7 +218,7 @@ p {
     font-family: 'Epilogue', sans-serif;
 }
 
-/*Contact form*/
+
 label {
     color: gold;
     text-shadow: 2px 2px black;
@@ -219,19 +228,18 @@ label {
     margin-bottom: 10px;
 }
 
-  /*footer styling*/
 footer {
     color: gold;
     font-weight: 600;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    position: relative; /*change to relative after content is added*/
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
 
-/*Flexbox*/
+
 .box {
     display: inline-flex;
     flex-wrap: wrap;
@@ -257,7 +265,7 @@ footer {
     padding-right: 10px;
 }
 
-/*Icons*/
+
 .fab {
     padding: 5px;
     font-size: 50px;
@@ -278,7 +286,6 @@ footer {
     color: gold;
 }
 
-/*Footer p*/
 
 .p-footer {
     font-size: 20px;
@@ -292,4 +299,4 @@ footer {
     color: gold;
     font-family: 'Epilogue', sans-serif;
 
-}
+} */
