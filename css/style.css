@@ -14,6 +14,9 @@ body > footer{
 	min-width:100%;
 	max-width:100%;
 	height:auto;
+	width: 100vw !important;
+        left: 12px;
+        position: absolute;
 }
 
 html {
