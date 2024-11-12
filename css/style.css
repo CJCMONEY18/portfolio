@@ -109,6 +109,8 @@ a.btn {
 
 .hero-subtitle {
     font-size: 32px;
+    font-style: italic;
+    padding-top: 10px;
 }
 
 .hero-text {
