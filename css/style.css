@@ -21,6 +21,7 @@ body > footer{
 
 html {
 	scroll-padding-top: 60px;
+    overflow-x: hidden!important;
 }
 
 body {
@@ -145,7 +146,7 @@ a.btn {
  /* background: linear-gradient(0deg, #000C80 0%, #00021A 100%);*/
   padding-bottom: 60px;
 	position: relative;
-	overflow: hidden;
+	overflow: hidden!important;
 }
 
 #projects::before {
