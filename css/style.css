@@ -48,11 +48,7 @@ a:hover, i:hover {
 }
 
 .btn-primary:hover {
-    /* background-color: #0b5ed7; */
-    /* border-color: #0a58ca; */
-    /* border: 2px solid #0a58ca; */
-    /* transition: border 1s; */
-    transform: scale(1.1);
+    transform: scale(1.02);
     transition: transform 0.2s;
 }
 
@@ -69,6 +65,7 @@ a:hover, i:hover {
     border-radius: 15px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-size: 1.2rem;
 }
 
 a.btn {
@@ -81,8 +78,6 @@ a.btn {
 .navbar {
     background: linear-gradient(0deg, #000C80 0%, #00021A 100%);
 }
-
-
 
 .hero-title {
     text-transform: uppercase;
@@ -113,16 +108,12 @@ a.btn {
 
 .hero-subtitle {
     font-size: 32px;
-    font-style: italic;
     padding-top: 10px;
 }
 
 .hero-text {
     font-size: 20px;
 }
-
-
-
 
 .project-title {
     font-size: 5rem;
@@ -143,32 +134,28 @@ a.btn {
 
 
 #projects {
- background: linear-gradient(0deg, #000C80 0%, #00021A 100%);
-  padding-bottom: 60px;
-	position: relative;
-	overflow: hidden!important;
-}
-
-/* #projects::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
     background: linear-gradient(0deg, #000C80 0%, #00021A 100%);
-    transform: skewY(-5deg);
-    transform-origin: top left;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-} */
+    padding-bottom: 60px;
+    position: relative;
+    overflow: hidden!important;
+}
 
 
 .card {
     border-radius: 15px;
-    width: 25rem;
     height: 100%;
-    background: linear-gradient(0deg, rgb(100, 102, 127) 0%, rgb(65, 72, 138) 100%);
+    background: linear-gradient(
+        0deg,
+        rgb(100, 102, 127) 0%,
+        rgb(65, 72, 138) 100%
+    );
     color: #fff;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card-title {
@@ -182,25 +169,28 @@ a.btn {
     border-top-right-radius: 15px;
 }
 
-.card-body ul li {
-    display: inline-flex;    
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 0 10px;
-    min-width: 81px;
-    justify-content: center;
-}
-
-.card-body ul li:nth-child(2) {
-    margin: 0 10px;
-}
-
 .card-body ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
     margin-left: 0;
     padding-left: 0;
+    list-style: none;
 }
 
+.card-body ul li {
+    display: inline-flex;
+    width: fit-content;
 
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    padding: 0 10px;
+    min-width: 81px;
+
+    justify-content: center;
+}
 
 .contact-title {
     font-size: 5rem;
